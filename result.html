@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<style>
+body{
+margin: auto;
+    width: 50%;
+    padding: 10px;
+background-image: url(https://media.istockphoto.com/photos/white-tourist-buses-in-a-row-picture-id945297486?k=20&m=945297486&s=612x612&w=0&h=rk3Y2tcASaQfFPnnJ5zPWG1gHsmthFqQHGWKZ_hspxM=);
+    background-size: cover;
+}
+
+h3,h2{
+font-size:2vw;
+font-weight:bold;
+font-family: "Times New Roman", Times, serif;
+text-align:center;
+}
+
+
+div {
+  
+    border-radius: 5px;
+    background-color rgba(0,0,0,0,5);
+    padding: 20px;
+}
+</style>
+   <body>
+   <div>
+       <h2>{{ msg }}</h2>
+{% if user!='admin' %}
+      <a href = "/user">go back to home page</a>
+{% else %}
+ <a href = "/admin.html">go back to home page</a>
+{% endif %}
+
+      <div>
+   </body>
+</html>
